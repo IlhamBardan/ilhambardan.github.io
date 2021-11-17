@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "DancingStatic-Bold";
+  src: url(/assets/font/static/DancingScript-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DancingStatic-Medium";
+  src: url(/assets/font/static/DancingScript-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DancingStatic-Regular";
+  src: url(/assets/font/static/DancingScript-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DancingStatic-SemiBold";
+  src: url(/assets/font/static/DancingScript-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "BigShoulder";
+  src: url(/assets/fonts/Big_Shoulders_Stencil_Text/BigShouldersStencilText-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SeaDokdo";
+  src: url(/assets/font/East_Sea_Dokdo/EastSeaDokdo-Regular.ttf) format("truetype");
+}
