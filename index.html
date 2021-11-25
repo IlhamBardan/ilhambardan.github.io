@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/img/logo/logo.png" alt="" width="100" height="100" />
@@ -33,19 +33,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-center mx-auto">
               <li class="nav-item">
-                <a class="nav-link me-3 outer-shadow inner-shadow active" aria-current="page" href="#">Home</a>
+                <a class="nav-link mx-3 outer-shadow bg-dark active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="#about">About</a>
+                <a class="nav-link mx-3" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="product.html">Product</a>
+                <a class="nav-link mx-3" href="product.html">Product</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="gallery.html">Gallery</a>
+                <a class="nav-link mx-3" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="team.html">Team</a>
+                <a class="nav-link mx-3" href="team.html">Team</a>
               </li>
             </ul>
           </div>
@@ -61,7 +61,7 @@
               <div class="col-md-7">
                 <div class="home-text">
                   <h1>Shellby Coco</h1>
-                  <h2><span>Indo</span>nesia</h2>
+                  <h2>Indonesia</h2>
                   <p class="fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ipsum..</p>
                 </div>
               </div>
@@ -82,18 +82,8 @@
     </div>
 
     <!-- About Page -->
-    <section class="about-page" id="about">
+    <section class="about-page">
       <div class="container">
-        <div class="row justify-content-end">
-          <div class="col">
-            <div class="page-title">
-              <h2 data-heading="about us">
-                <hr style="background: #000" />
-                Shellby Coco
-              </h2>
-            </div>
-          </div>
-        </div>
         <!-- About - COntent -->
         <div class="row align-items-center">
           <div class="col-md-4">
@@ -105,7 +95,11 @@
             </div>
           </div>
           <div class="col">
-            <div class="about-panel">
+            <div class="about-panel py-4 px-5">
+              <div class="page-title mb-4">
+                <h2 data-heading="about us">Shellby Coco</h2>
+                <hr style="background: #000; height: 4px; margin-top: 10px" />
+              </div>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptatum laudantium temporibus doloribus soluta ad commodi impedit officiis ducimus, aperiam a quas in dolor maiores culpa quam illo illum molestias cum
                 corporis aliquam rem. Impedit perspiciatis voluptates nam exercitationem sequi vero voluptatem fugit itaque nihil porro, hic harum illo molestiae!
@@ -114,30 +108,33 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="rgba(0, 0, 0, 0.25)"
-          fill-opacity="1"
-          d="M0,128L80,112C160,96,320,64,480,90.7C640,117,800,203,960,218.7C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-        <path
-          fill="rgba(0, 0, 0, 0.25)"
-          fill-opacity="1"
-          d="M0,256L80,256C160,256,320,256,480,213.3C640,171,800,85,960,53.3C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-        <path
-          fill="#3a3834fa"
-          fill-opacity="1"
-          d="M0,288L80,282.7C160,277,320,267,480,266.7C640,267,800,277,960,250.7C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-        <path
-          fill="#3a3834fa"
-          fill-opacity="1"
-          d="M0,160L80,149.3C160,139,320,117,480,144C640,171,800,245,960,282.7C1120,320,1280,320,1360,320L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-        ></path>
-      </svg>
     </section>
     <!-- About Page -->
+
+    <!-- Wave Svg -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="rgba(0, 0, 0, 0.25)"
+        fill-opacity="1"
+        d="M0,128L80,112C160,96,320,64,480,90.7C640,117,800,203,960,218.7C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+      <path
+        fill="rgba(0, 0, 0, 0.25)"
+        fill-opacity="1"
+        d="M0,256L80,256C160,256,320,256,480,213.3C640,171,800,85,960,53.3C1120,21,1280,43,1360,53.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+      <path
+        fill="#3a3834fa"
+        fill-opacity="1"
+        d="M0,288L80,282.7C160,277,320,267,480,266.7C640,267,800,277,960,250.7C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+      <path
+        fill="#3a3834fa"
+        fill-opacity="1"
+        d="M0,160L80,149.3C160,139,320,117,480,144C640,171,800,245,960,282.7C1120,320,1280,320,1360,320L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- End of Wave Svg -->
 
     <!-- Service Page -->
     <section class="service-page">
@@ -250,7 +247,9 @@
             <div class="contact-item-inner outer-shadow">
               <i class="fas fa-map-marker-alt">
                 <span>Address</span>
-                <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet. 08098</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet, 232123, Indonesia</p>
               </i>
             </div>
           </div>
@@ -258,18 +257,18 @@
         <!-- End of Contact Item -->
 
         <!-- Contact Form -->
-        <div class="row">
+        <div class="row" style="margin-bottom: 10rem">
           <div class="contact-form">
             <form action="">
               <div class="row">
                 <div class="w-50">
                   <!-- Form Box - Name -->
                   <div class="input-group outer-shadow hover-inner-shadow">
-                    <input type="text" placeholder="Name" class="input-control" />
+                    <input type="text" placeholder="Username" class="input-control" />
                   </div>
                   <!-- Form Box - Email -->
                   <div class="input-group outer-shadow hover-inner-shadow">
-                    <input type="text" placeholder="Email" class="input-control" />
+                    <input type="email" placeholder="Email" class="input-control" />
                   </div>
                   <!-- Form Box - Subject -->
                   <div class="input-group outer-shadow hover-inner-shadow">
@@ -321,37 +320,60 @@
             <h2 data-heading="Our Client believe in us">What they are Saying</h2>
           </div>
         </div>
-        <div class="testimonial d-flex flex-md-row flex-wrap justify-content-center">
-          <div class="testimonial-box">
-            <div class="testimonial-slider">
-              <div class="testimonial-slider-container">
-                <!-- Testimonial Items -->
-                <div class="testimonial-item active">
-                  <i class="fas fa-quote-left left"></i>
-                  <i class="fas fa-quote-right right"></i>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore nulla, commodi unde non est?</p>
-                  <img src="assets/img/team/column-1/president-director.jpg" alt="testimonial" />
-                  <span>Alexander Alelo</span>
-                  <h2>Ceo France Company</h2>
-                </div>
-                <!-- End of Testimonial Items -->
-
-                <!-- Testimonial Items -->
-                <div class="testimonial-item">
-                  <i class="fas fa-quote-left left"></i>
-                  <i class="fas fa-quote-right right"></i>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempore nulla, commodi unde non est?</p>
-                  <img src="assets/img/team/column-1/financial-officer.jpg" alt="testimonial" />
-                  <span>Alexa Alelo</span>
-                  <h2>Ceo Dubai Company</h2>
-                </div>
-                <!-- End of Testimonial Items -->
+      </div>
+      <div class="container-testimonial">
+        <!-- Testimonial Indicator Slide -->
+        <div class="indicator">
+          <span class="btn-indicator active"></span>
+          <span class="btn-indicator"></span>
+          <span class="btn-indicator"></span>
+          <span class="btn-indicator"></span>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-slide-row" id="testimonial-slide">
+            <!-- Testimonial Item -->
+            <div class="testimonial-slide-col">
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique.</p>
+                <h3>Zapanio</h3>
+                <p class="company">Ceo France Company</p>
+              </div>
+              <div class="testimonial-img">
+                <img src="assets/img/team/column-1/president-director.jpg" alt="" />
               </div>
             </div>
-            <!--  -->
-            <div class="testimonial-slider-nav">
-              <span class="prev outer-shadow hover-inner-shadow"><i class="fas fa-angle-left"></i></span>
-              <span class="next outer-shadow hover-inner-shadow"><i class="fas fa-angle-right"></i></span>
+            <!-- Testimonial Item -->
+            <div class="testimonial-slide-col">
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique.</p>
+                <h3>Sarah Xander</h3>
+                <p class="company">Ceo USA Company</p>
+              </div>
+              <div class="testimonial-img">
+                <img src="assets/img/team/column-1/financial-officer.jpg" alt="" />
+              </div>
+            </div>
+            <!-- Testimonial Item -->
+            <div class="testimonial-slide-col">
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique.</p>
+                <h3>Muhammad Abdul</h3>
+                <p class="company">Ceo Arab Company</p>
+              </div>
+              <div class="testimonial-img">
+                <img src="assets/img/team/column-1/president-director.jpg" alt="" />
+              </div>
+            </div>
+            <!-- Testimonial Item -->
+            <div class="testimonial-slide-col">
+              <div class="testimonial-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, similique.</p>
+                <h3>Courtes</h3>
+                <p class="company">Ceo Rusia Company</p>
+              </div>
+              <div class="testimonial-img">
+                <img src="assets/img/team/column-1/financial-officer.jpg" alt="" />
+              </div>
             </div>
           </div>
         </div>
