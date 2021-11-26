@@ -162,6 +162,7 @@ img {
   transition: all 0.3s ease;
   display: inline-block;
   border: none;
+  text-decoration: none;
 }
 
 .btn-1::after {
@@ -287,7 +288,7 @@ img {
 /* About Page */
 .about-page {
   padding: 80px 0 80px;
-  min-height: 120vh;
+  min-height: 100vh;
 }
 
 /* About - Image */
@@ -332,7 +333,7 @@ img {
   margin-top: 8em;
 }
 
-.about-page .about-panel-title {
+.about-panel-title {
   position: relative;
   top: 0;
   left: 48px;
@@ -462,7 +463,7 @@ img {
   border-radius: 50%;
   box-shadow: 0px 18px 42px 4px rgb(0 0 0 / 20%);
   position: absolute;
-  top: -47%;
+  top: -30%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
@@ -654,10 +655,60 @@ img {
   background: #50e3c2;
 }
 
+/* Faq Page */
+.faq-page {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.faq-tabs {
+  padding: 20px 10px 20px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.faq-tabs .tab-item {
+  display: inline-block;
+  margin: 0 5px 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  border: 1px solid #eff0f4;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.nav-pills .tab-item {
+  background: none;
+  border: 0;
+  border-radius: 0.25rem;
+}
+.nav-pills .tab-item.active,
+.nav-pills .show > .tab-item {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.faq-tabs .tab-item:hover:not(.active) {
+  opacity: 0.6;
+}
+
+.tab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeInTop 0.5s ease;
+}
+
 /* Contact Page */
 .contact-page {
   padding: 80px 0 80px;
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 .contact-page .contact-item {
@@ -737,10 +788,9 @@ img {
   resize: none;
 }
 
-.contact-page .btn-submit {
+.btn-submit {
   flex: 0 0 100%;
   max-width: 100%;
-  text-align: right;
   padding: 0 15px;
 }
 
@@ -936,7 +986,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -50px;
+  bottom: -25px;
 }
 
 .btn-indicator {
@@ -1100,7 +1150,7 @@ img {
 /* Payment Method Page */
 .payment-page {
   padding: 80px 0 80px;
-  min-height: 170vh;
+  min-height: 230vh;
 }
 
 .cover-payment {
@@ -1436,8 +1486,8 @@ hr {
   .client-page .client-card {
     max-width: 90%;
     display: block;
-    margin-top: -240px;
-    margin-left: 6%;
+    margin-top: -216px;
+    margin-left: 5%;
     margin-bottom: 7px;
   }
   .client-page .client-card-title {
@@ -1446,7 +1496,7 @@ hr {
     left: 25%;
   }
   .client-page .client-card-text {
-    margin-top: -30%;
+    margin-top: -33%;
     font-size: 18px;
   }
   .terms-conditions-page .terms {
@@ -1489,25 +1539,10 @@ hr {
   }
   /* About Page */
   .about-page .about-left-1,
-  .about-page .about-left-1 img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    padding-bottom: 15px;
-  }
+  .about-page .about-left-1 img,
   .about-page .about-left-2,
   .about-page .about-left-2 img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-    max-width: 100%;
+    display: none;
   }
   .about-page .about-panel {
     margin-top: -20px;
@@ -1549,28 +1584,19 @@ hr {
   .service-page .col-md-4 .service-right-box .s-info {
     text-align: center;
   }
-  /* Contact Page */
-  .containers {
-    display: grid;
-    width: 100%;
-  }
-  .card-ribbon {
-    width: 100%;
-  }
-  .card-ribbon h2 {
-    font-size: 24px;
-  }
   /* Client Page */
   .client-page .page-title h2 {
     font-size: 24px;
+    margin-bottom: 0;
   }
   .client-page .client-card {
     padding: 1rem;
-    margin-bottom: unset;
+    margin-bottom: 40px;
+    margin-top: -51%;
   }
   .client-page .client-card-title {
     transform: translateY(-6rem);
-    left: 6.3%;
+    left: 13.3%;
     height: 130px;
   }
   .client-page .client-card-title h2 {
@@ -1594,21 +1620,22 @@ hr {
   .testimonial-img {
     width: 100px;
     height: 100px;
-    right: 59%;
-    top: 25%;
+    right: 50%;
+    top: 22%;
     z-index: 2;
   }
   .testimonial-text {
-    width: 320px;
-    height: 181px;
-    left: 3.5%;
-    top: 29%;
+    width: 339px;
+    height: 189px;
+    left: 6.5%;
+    top: 27%;
     padding: 15px;
   }
   .indicator {
-    top: 71%;
+    top: 68%;
     bottom: unset;
   }
+  /* Payment Page */
   .cover-payment,
   .cover-payment .legal-title {
     height: 100vmin;
