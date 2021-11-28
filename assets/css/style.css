@@ -119,7 +119,6 @@ img {
 
 .outer-shadow {
   box-shadow: var(--outer-shadow);
-  border-radius: 30px;
 }
 
 .inner-shadow {
@@ -405,11 +404,6 @@ img {
 
 .business-page .cover {
   background-image: url(../img/gallery/img-1.jpg);
-  border-bottom-left-radius: 0px;
-}
-
-.business-page .cover .free-sample {
-  border-bottom-left-radius: 0px;
 }
 
 .business-page .cover .free-sample h2 {
@@ -795,7 +789,7 @@ img {
 /* Contact Page */
 .contact-page {
   padding: 80px 0 80px;
-  min-height: 120vh;
+  min-height: 100vh;
 }
 
 .contact-page .contact-item {
@@ -850,18 +844,12 @@ img {
 .contact-page .input-group {
   margin: 0 0 25px;
   transition: all 0.3s ease;
-  border-radius: 30px;
-}
-
-.contact-page .input-group::after {
-  border-radius: 30px;
 }
 
 .contact-page .input-group .input-control {
   height: 45px;
   display: block;
   width: 100%;
-  border-radius: 30px;
   border: none;
   background-color: transparent;
   font-size: 16px;
@@ -892,8 +880,8 @@ img {
 }
 
 .client-page {
-  padding: 80px 0 0;
-  height: 100vmin;
+  padding: 80px 0 80px;
+  height: 100vh;
   background: #1f1d36;
 }
 
@@ -916,7 +904,7 @@ img {
     "client-title client-map"
     "client-flag client-map";
   grid-gap: 20px;
-  margin-top: -25%;
+  margin-top: 40px;
 }
 
 .client {
@@ -953,22 +941,6 @@ img {
   color: #fff;
 }
 
-.client-page .c-icon i {
-  background: #000;
-  min-width: 40px;
-  height: 40px;
-  text-align: center;
-  padding-top: 9px;
-  border-radius: 50%;
-}
-
-.client-page .card h2 {
-  font-size: 30px;
-  font-weight: 500;
-  font-family: "BigShoulder";
-  text-transform: capitalize;
-}
-
 .client-page .testi-icon {
   font-size: 30px;
   margin-top: 15px;
@@ -987,102 +959,6 @@ img {
   color: #fff;
 }
 
-/* Testimonial */
-.testimonial {
-  overflow: hidden;
-}
-
-.testimonial-slide-row {
-  display: flex;
-  width: 3200px;
-  transition: 0.5s;
-}
-
-.testimonial-slide-col {
-  width: 800px;
-  height: 400px;
-  position: relative;
-}
-
-.testimonial-img {
-  position: absolute;
-  top: 10%;
-  right: 0;
-  height: 100%;
-  z-index: 1;
-}
-
-.testimonial-img img {
-  height: 100%;
-  border-radius: 5px;
-  width: unset;
-}
-
-.testimonial-text {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(20px);
-  width: 500px;
-  height: 270px;
-  position: absolute;
-  left: 5%;
-  top: 60%;
-  transform: translateY(-50%);
-  color: #d4ac2b;
-  box-sizing: border-box;
-  padding: 45px;
-  border-radius: 10px;
-  z-index: 2;
-}
-
-.testimonial-text p {
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.testimonial-text .company {
-  font-size: 16px;
-  color: var(--text-dark-900);
-  font-weight: 500;
-}
-
-.testimonial-text h3 {
-  margin: 35px 0 5px;
-  color: #fff;
-}
-
-.container-testimonial {
-  width: 800px;
-  height: 400px;
-  position: relative;
-  top: 35%;
-  left: 48%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.indicator {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -25px;
-}
-
-.btn-indicator {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  margin: 4px;
-  border-radius: 10px;
-  background: #fff;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.btn-indicator.active {
-  width: 45px;
-  background: #d4ac2b;
-}
-
 /* Free Sample Page */
 .cover {
   width: 100%;
@@ -1092,14 +968,12 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  border-bottom-left-radius: 125px;
 }
 
 .cover .free-sample {
   background-color: rgba(0, 0, 0, 0.7);
   height: 80vmin;
   width: 100%;
-  border-bottom-left-radius: 125px;
 }
 
 .cover .free-sample p {
@@ -1143,7 +1017,7 @@ img {
   border-radius: 30px;
 }
 
-/* Procut Page */
+/* Product Page */
 .product-page {
   padding: 80px 0 80px;
   min-height: 100vh;
@@ -1235,11 +1109,6 @@ img {
 
 .payment-page .cover {
   background-image: url(../img/gallery/img-2.jpg);
-  border-bottom-left-radius: 0px;
-}
-
-.payment-page .cover .free-sample {
-  border-bottom-left-radius: 0px;
 }
 
 .payment-page .cover .free-sample h2 {
@@ -1281,10 +1150,9 @@ img {
 footer {
   width: 100%;
   position: absolute;
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  background: var(--text-dark-600);
   color: #fff;
   padding: 100px 0 30px;
-  border-top-left-radius: 125px;
   font-size: 16px;
   line-height: 20px;
 }
@@ -1456,9 +1324,6 @@ hr {
   .service-page .service-mid-box .s-icon i {
     font-size: 20px;
   }
-  .client-page .client-box {
-    margin-top: -30%;
-  }
   /* Footer */
   .f-social-media .fab {
     margin-right: 10px;
@@ -1482,9 +1347,6 @@ hr {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .contact-page .btn-submit {
-    text-align: center;
-  }
   /* About Page */
   .about-page .about-left-1 img {
     max-width: 80%;
@@ -1504,9 +1366,9 @@ hr {
     font-size: 10px;
   }
   /* About Owner Page */
-  .about-owner-page {
+  /* .about-owner-page {
     min-height: 150vh;
-  }
+  } */
   .about-owner-page .row .col-md-6 .side-foto img {
     width: 60%;
   }
@@ -1546,17 +1408,9 @@ hr {
   .cards .img-box {
     transform: translateY(30px) scale(0.5);
   }
-  /* Contact Page */
-  .contact-page {
-    padding: 80px 0 0;
-    min-height: 100vh;
-  }
-  .card-ribbon h2 {
-    font-size: 24px;
-  }
   /* Client Page */
   .client-page {
-    min-height: 175vh;
+    min-height: 110vh;
   }
   .client-page .client-box {
     grid-template-columns: 1fr;
@@ -1573,15 +1427,13 @@ hr {
   .client-page .testi-icon {
     margin-bottom: 15px;
   }
-  .testimonial {
-    margin-top: -21%;
-  }
-  .testimonial-slide-row {
-    margin-top: 0;
-  }
   /* Terms and Conditions Page */
   .terms-conditions-page .terms {
     grid-template-columns: 1fr;
+  }
+  /* Contact Page */
+  .contact-page .btn-submit {
+    text-align: center;
   }
   /* Footer */
   footer .col {
@@ -1590,6 +1442,9 @@ hr {
   footer .col:nth-child(2),
   footer .col:nth-child(3) {
     flex-basis: 100%;
+  }
+  .col h3 {
+    text-align: center;
   }
   .f-social-media {
     text-align: center;
@@ -1666,9 +1521,6 @@ hr {
     text-align: center;
   }
   /* Client Page */
-  .client-page {
-    min-height: 210vh;
-  }
   .client-page .page-title h2 {
     font-size: 24px;
     margin-bottom: 0;
@@ -1681,34 +1533,6 @@ hr {
       "client-title"
       "client-map"
       "client-flag";
-  }
-  .client-page .testimonial {
-    margin-top: -48%;
-  }
-  .testimonial-slide-row {
-    margin-top: 0;
-  }
-  .testimonial-slide-col {
-    top: 34%;
-  }
-  .testimonial-img {
-    width: 100px;
-    height: 100px;
-    right: 50%;
-    top: 22%;
-    z-index: 2;
-  }
-  .testimonial-text {
-    width: 339px;
-    height: 189px;
-    left: 6.5%;
-    top: 27%;
-    padding: 15px;
-  }
-  .indicator {
-    top: 52%;
-    left: 53%;
-    bottom: unset;
   }
   /* Free Sample */
   .cover .free-sample h2 {
