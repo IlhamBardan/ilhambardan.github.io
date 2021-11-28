@@ -200,6 +200,11 @@ img {
     text-shadow: 0 -50px 0 rgba(255, 255, 255, 0.2);
   }
 }
+@keyframes progress {
+  from {
+    width: 0;
+  }
+}
 
 /* Home Page */
 .header {
@@ -390,6 +395,88 @@ img {
   padding: 80px 0 80px;
   min-height: 100vh;
   background: #3a3834fa;
+}
+
+/* Business Page */
+.business-page {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.business-page .cover {
+  background-image: url(../img/gallery/img-1.jpg);
+  border-bottom-left-radius: 0px;
+}
+
+.business-page .cover .free-sample {
+  border-bottom-left-radius: 0px;
+}
+
+.business-page .cover .free-sample h2 {
+  padding-top: 100px;
+}
+
+.progress-bars {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  padding: 24px 10px 18px;
+  background: linear-gradient(#616161 0%, #333 10%, #222);
+  border-radius: 8px;
+  border: 2px solid #000;
+  transition: 0.5s;
+}
+
+.progress-bars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.progress-bars .Name {
+  position: relative;
+  width: 80px;
+  text-align: right;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: -2px;
+}
+
+.progress-bars .Value {
+  position: relative;
+  width: 40px;
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top: -2px;
+}
+
+.progress-bars .percent {
+  position: relative;
+  width: calc(100% - 150px);
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  background: #151515;
+  box-shadow: inset 0 0 10px #000;
+  overflow: hidden;
+}
+
+.progress-bars .percent .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  background: #d4ac2b;
+  box-shadow: inset 0 0 2px #000;
+  animation: progress 4s ease-in-out forwards;
 }
 
 /* Service Page - Content */
@@ -1143,32 +1230,20 @@ img {
 /* Payment Method Page */
 .payment-page {
   padding: 80px 0 80px;
-  min-height: 230vh;
+  min-height: 100vh;
 }
 
-.cover-payment {
-  width: 100%;
-  height: 55vmin;
-  background-image: url("../img/logo/logo.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.payment-page .cover {
+  background-image: url(../img/gallery/img-1.jpg);
+  border-bottom-left-radius: 0px;
 }
 
-.cover-payment .legal-title {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 55vmin;
-  width: 100%;
+.payment-page .cover .free-sample {
+  border-bottom-left-radius: 0px;
 }
 
-.cover-payment .legal-title h2 {
-  padding-top: 150px;
-  font-size: 42px;
-  font-weight: 700;
-  color: #d4ac2b;
-  text-transform: uppercase;
-  letter-spacing: 10px;
+.payment-page .cover .free-sample h2 {
+  padding-top: 100px;
 }
 
 .payment-page .card .card-body .card-sub-text {
@@ -1591,9 +1666,15 @@ hr {
     text-align: center;
   }
   /* Client Page */
+  .client-page {
+    min-height: 210vh;
+  }
   .client-page .page-title h2 {
     font-size: 24px;
     margin-bottom: 0;
+  }
+  .client-map {
+    width: unset;
   }
   .client-page .client-box {
     grid-template-areas:
@@ -1601,9 +1682,8 @@ hr {
       "client-map"
       "client-flag";
   }
-
   .client-page .testimonial {
-    margin-top: -21%;
+    margin-top: -48%;
   }
   .testimonial-slide-row {
     margin-top: 0;
@@ -1630,21 +1710,9 @@ hr {
     left: 53%;
     bottom: unset;
   }
-  /* Payment Page */
-  .cover-payment,
-  .cover-payment .legal-title {
-    height: 100vmin;
-  }
-  .cover-payment .legal-title h2 {
-    padding-top: 50px;
-    font-size: 30px;
-  }
-  .payment-page .card {
-    top: -26%;
-  }
   /* Free Sample */
   .cover .free-sample h2 {
-    padding-top: 97px;
+    padding-top: 70px;
     font-size: 24px;
   }
   .cover .free-sample p {
